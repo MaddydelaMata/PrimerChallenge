@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/Logo (1).png" alt="">
+    </header>
+    <div class="contenedor_principal">
+        <div class="contenedor_izquierda">
+            <div class="contenedor_izquierda_texto">
+                <textarea id="texto" placeholder="Ingresa texto aquí"></textarea>
+                <div class="contenedor_izquierda_botones">
+                    <div>
+                        <p id="orientacion">Solo letras minúsculas y sin acentos</p>
+                    </div>
+                    <div class="contenedor_izquierda_orientacion">
+                        <div class="contenedor_botones">
+                            <button onclick="encriptar()">Encriptar</button>
+                            <button onclick="desencriptar()">Desencriptar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contenedor_derecha">
+            <div id="contenido_antes">
+                <img src="./assets/Muñeco.png" alt="">
+                <h2>Ningun mensaje fue encontrado</h2>
+                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div id="contenido_despues">
+                <textarea id="texto_encriptado"></textarea>
+                <button id="copiar" onclick="copiar()">Copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Desarrollado por Cynthia Carrasco 2024
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>
